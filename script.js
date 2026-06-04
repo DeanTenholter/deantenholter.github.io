@@ -1,3 +1,1 @@
-<script>
-  AOS.init();
-</script>
+console.log("Connected")
