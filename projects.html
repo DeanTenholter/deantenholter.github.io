@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon v2.png" type="image/x-icon" />
-    <!-- ---Library links--- -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
     <!-- Bootstrap 5.3 -->
     <link
@@ -22,72 +21,109 @@
     <title>Dean T's Profile</title>
   </head>
   <body>
-    <!--Navbar-->
+
+    <!-- Navbar -->
     <nav class="navbar bg-dark bg-gradient p-3 shadow">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold text-white" href="index.html">
           <i class="bi bi-house"></i> Home
         </a>
-
         <ul class="navbar-nav ms-auto d-flex flex-row">
-          <!-- home-->
           <li class="nav-item">
             <a class="nav-link fw-bold text-white" href="projects.html">
               <i class="bi bi-archive-fill"></i> Projects
             </a>
           </li>
-          <!--Project page-->
           <li class="nav-item me-3 mx-3">
             <a class="nav-link fw-bold text-white" href="info.html">
-              <i class="bi bi-info-circle"></i> Info</a
-            >
+              <i class="bi bi-info-circle"></i> Info
+            </a>
           </li>
-          <!--contact page-->
           <li class="nav-item">
             <a class="nav-link fw-bold text-white" href="contact.html">
-              <i class="bi bi-telephone"></i> Contact</a
-            >
+              <i class="bi bi-telephone"></i> Contact
+            </a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <!--Project cards -->
-    <div>
-      <div
-        class="card shadow"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        style="width: 18rem"
-      >
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title text-center">Quiz</h5>
-          <p class="card-text text-center">
-            De quiz was mijn eerste project dat ik heb gemaakt in mijn eerste
-            leerjaar. Het onderwerp van mijn quiz was technologie en bevatte 20
-            vragen.
-          </p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item list-group-item-dark fw-bold text-center rounded">Used Skills</li>
-            <li class="list-group-item">HTML</li>
-            <li class="list-group-item">CSS</li>
-            <li class="list-group-item">JavaScript</li>
-          </ul>
+    <!-- Project cards -->
+    <div class="container my-4">
+      <div class="row g-3 justify-content-center">
+
+        <!--QUIZ CARD-->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card shadow h-100" data-aos="fade-up" data-aos-duration="1500">
+            <img src="img/quiz.png" class="card-img-top h-25" alt="Quiz project" />
+            <div class="card-body">
+              <h5 class="card-header bg-secondary-subtle text-center">Quiz</h5>
+              <p class="card-text text-center">
+                De technologie-quiz was mijn eerste project dat ik heb gemaakt in mijn eerste
+                leerjaar. Dit project ging vooral om het leren van JavaScript array's toe te passen.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-dark fw-bold text-center rounded">Used Skills</li>
+                <li class="list-group-item"><i class="bi bi-filetype-html"> </i>HTML</li>
+                <li class="list-group-item"><i class="bi bi-css"> </i>CSS</li>
+                <li class="list-group-item"><i class="bi bi-javascript"> </i>JavaScript</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <!--BKE CARD-->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card shadow h-100" data-aos="fade-up" data-aos-duration="1750">
+            <img src="img/bke.png" class="card-img-top h-25" alt="Boter kaas en eieren project" />
+            <div class="card-body">
+              <h5 class="card-header bg-secondary-subtle text-center">Boter, kaas en eieren</h5>
+              <p class="card-text text-center">
+                 Boter kaas en eieren was in mijn eerste leerjaar het tweede schoolproject dat ik heb gemaakt. 
+                Dit project was om verdiepende kennis te tonen van de hieronder genoemde skills.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-dark fw-bold text-center rounded">Used Skills</li>
+                <li class="list-group-item"><i class="bi bi-filetype-html"> </i>HTML</li>
+                <li class="list-group-item"><i class="bi bi-css"> </i>CSS</li>
+                <li class="list-group-item"><i class="bi bi-javascript"> </i>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--MON-IN CARD-->
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="card shadow h-100" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/mon-in.png" class="card-img-top h-25" alt="Boter kaas en eieren project" />
+            <div class="card-body">
+              <h5 class="card-header bg-secondary-subtle text-center">Mon-in</h5>
+              <p class="card-text text-center">
+                Voor mijn derde schoolproject was de opdracht om een LinkedIn clone te bouwen. 
+                Hier leerde ik Bootstrap en een database toe te passen om de applicatie te maken.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-dark fw-bold text-center rounded">Used Skills</li>
+                <li class="list-group-item"><i class="bi bi-filetype-html"> </i>HTML</li>
+                <li class="list-group-item"><i class="bi bi-bootstrap-fill"> </i>Bootstrap 5</li>
+                <li class="list-group-item"><i class="bi bi-filetype-php"> </i>PHP</li>
+                <li class="list-group-item"><i class="bi bi-database-fill"> </i>Database</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <!-- --Scripts-- -->
-
-    <!--AOS-->
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <!-- JavaScript -->
     <script src="script.js" defer></script>
-    <!--Boostrap 5.3-->
+    <!-- Bootstrap 5.3 -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
