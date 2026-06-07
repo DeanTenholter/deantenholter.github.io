@@ -23,36 +23,77 @@
   </head>
   <body class="bg-secondary-subtle">
     <!--Navbar-->
-    <nav class="navbar bg-dark bg-gradient p-3 shadow">
+    <nav
+      class="navbar navbar-dark navbar-expand-lg bg-dark bg-gradient p-3 shadow"
+    >
       <div class="container-fluid">
+        <!-- Home -->
         <a class="navbar-brand fw-bold text-white" href="index.html">
           <i class="bi bi-house"></i> Home
         </a>
 
-        <ul class="navbar-nav ms-auto d-flex flex-row">
-          <!--Home-->
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="projects.html">
-              <i class="bi bi-archive"></i> Projects
-            </a>
-          </li>
-          <!--Projects-->
-          <li class="nav-item me-3 mx-3">
-            <a class="nav-link fw-bold text-white" href="info.html">
-              <i class="bi bi-info-circle-fill"></i> Info</a
-            >
-          </li>
-          <!--login-->
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="contact.html">
-              <i class="bi bi-telephone"></i> Contact</a
-            >
-          </li>
-        </ul>
+        <!-- Hamburger knop -->
+        <button
+          class="navbar-toggler border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <!-- Projects -->
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="projects.html">
+                <i class="bi bi-archive"></i> Projects
+              </a>
+            </li>
+            <!-- Info -->
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold text-white" href="info.html">
+                <i class="bi bi-info-circle-fill"></i> Info
+              </a>
+            </li>
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="contact.html">
+                <i class="bi bi-telephone"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-
+    <!--footer -->
+    <footer
+      class="bg-dark bg-gradient py-2 mt-3 text-center fixed-bottom text-white"
+    >
+      &copy; Copyright 2026 Dean Tenholter
+      <hr class="w-75 mx-auto" />
+      <div class="mt-2">
+        <a
+          href="https://github.com/DeanTenholter"
+          class="text-white mx-2 text-decoration-none"
+          target="_blank"
+        >
+          <i class="bi bi-github fs-5"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/dean-tenholter-1493b9410"
+          class="text-white mx-2 text-decoration-none"
+          target="_blank"
+        >
+          <i class="bi bi-linkedin fs-5"></i>
+        </a>
+      </div>
+    </footer>
 
     <!-- --Scripts-- -->
 

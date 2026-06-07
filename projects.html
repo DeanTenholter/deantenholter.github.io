@@ -21,74 +21,130 @@
     <title>Dean T's Profile</title>
   </head>
   <body class="bg-secondary-subtle">
-
-    <!-- Navbar -->
-    <nav class="navbar bg-dark bg-gradient p-3 shadow">
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-dark navbar-expand-lg bg-dark bg-gradient p-3 shadow"
+    >
       <div class="container-fluid">
+        <!-- Home -->
         <a class="navbar-brand fw-bold text-white" href="index.html">
           <i class="bi bi-house"></i> Home
         </a>
-        <ul class="navbar-nav ms-auto d-flex flex-row">
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="projects.html">
-              <i class="bi bi-archive-fill"></i> Projects
-            </a>
-          </li>
-          <li class="nav-item me-3 mx-3">
-            <a class="nav-link fw-bold text-white" href="info.html">
-              <i class="bi bi-info-circle"></i> Info
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="contact.html">
-              <i class="bi bi-telephone"></i> Contact
-            </a>
-          </li>
-        </ul>
+
+        <!-- Hamburger knop -->
+        <button
+          class="navbar-toggler border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <!-- Projects -->
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="projects.html">
+                <i class="bi bi-archive-fill"></i> Projects
+              </a>
+            </li>
+            <!-- Info -->
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold text-white" href="info.html">
+                <i class="bi bi-info-circle"></i> Info
+              </a>
+            </li>
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="contact.html">
+                <i class="bi bi-telephone"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- Project cards -->
     <div class="container my-4">
-      <div class="row g-3 justify-content-center">
-
+      <div class="row g-4 justify-content-center">
         <!--QUIZ CARD-->
-        
+
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="card shadow h-100" data-aos="fade-up" data-aos-duration="1500">
-            <img src="img/quiz.png" class="card-img-top h-25" alt="Quiz project" />
+          <div
+            class="card shadow h-100"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <img
+              src="img/quiz.png"
+              class="card-img-top h-25"
+              alt="Quiz project"
+            />
             <div class="card-body">
               <h5 class="card-header bg-secondary-subtle text-center">Quiz</h5>
               <p class="card-text text-center">
-                De technologie-quiz was mijn eerste project dat ik heb gemaakt in mijn eerste
-                leerjaar. Dit project ging vooral om het leren van JavaScript array's toe te passen.
+                De technologie-quiz was mijn eerste project dat ik heb gemaakt
+                in mijn eerste leerjaar. Dit project ging vooral om het leren
+                van JavaScript array's toe te passen.
               </p>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark fw-bold text-center rounded">Used Skills</li>
-                <li class="list-group-item"><i class="bi bi-filetype-html"> </i>HTML</li>
+                <li
+                  class="list-group-item list-group-item-dark fw-bold text-center rounded"
+                >
+                  Used Skills
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-filetype-html"> </i>HTML
+                </li>
                 <li class="list-group-item"><i class="bi bi-css"> </i>CSS</li>
-                <li class="list-group-item"><i class="bi bi-javascript"> </i>JavaScript</li>
+                <li class="list-group-item">
+                  <i class="bi bi-javascript"> </i>JavaScript
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        
 
         <!--BKE CARD-->
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="card shadow h-100" data-aos="fade-up" data-aos-duration="1750">
-            <img src="img/bke.png" class="card-img-top h-25" alt="Boter kaas en eieren project" />
+          <div
+            class="card shadow h-100"
+            data-aos="fade-up"
+            data-aos-duration="1750"
+          >
+            <img
+              src="img/bke.png"
+              class="card-img-top h-25"
+              alt="Boter kaas en eieren project"
+            />
             <div class="card-body">
-              <h5 class="card-header bg-secondary-subtle text-center">Boter-kaas-en-eieren</h5>
+              <h5 class="card-header bg-secondary-subtle text-center">
+                Boter-kaas-en-eieren
+              </h5>
               <p class="card-text text-center">
-                 Boter-kaas-en-eieren was in mijn eerste leerjaar het tweede schoolproject dat ik heb gemaakt. 
-                Dit project was om verdiepende kennis toe te passen van mijn skills.
+                Boter-kaas-en-eieren was in mijn eerste leerjaar het tweede
+                schoolproject dat ik heb gemaakt. Dit project was om verdiepende
+                kennis toe te passen van mijn skills.
               </p>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark fw-bold text-center rounded">Used Skills</li>
-                <li class="list-group-item"><i class="bi bi-filetype-html"> </i>HTML</li>
+                <li
+                  class="list-group-item list-group-item-dark fw-bold text-center rounded"
+                >
+                  Used Skills
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-filetype-html"> </i>HTML
+                </li>
                 <li class="list-group-item"><i class="bi bi-css"> </i>CSS</li>
-                <li class="list-group-item"><i class="bi bi-javascript"> </i>JavaScript</li>
+                <li class="list-group-item">
+                  <i class="bi bi-javascript"> </i>JavaScript
+                </li>
               </ul>
             </div>
           </div>
@@ -96,20 +152,43 @@
 
         <!--MON-IN CARD-->
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="card shadow h-100" data-aos="fade-up" data-aos-duration="2000">
-            <img src="img/mon-in.png" class="card-img-top h-25" alt="Mon-in project" />
+          <div
+            class="card shadow h-100"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <img
+              src="img/mon-in.png"
+              class="card-img-top h-25"
+              alt="Mon-in project"
+            />
             <div class="card-body">
-              <h5 class="card-header bg-secondary-subtle text-center">Mon-in</h5>
+              <h5 class="card-header bg-secondary-subtle text-center">
+                Mon-in
+              </h5>
               <p class="card-text text-center">
-                Voor mijn derde schoolproject was de opdracht om een LinkedIn clone te bouwen. 
-                Hier leerde ik Bootstrap en een database toe te passen om de applicatie te maken.
+                Voor mijn derde schoolproject was de opdracht om een LinkedIn
+                clone te bouwen. Hier leerde ik Bootstrap en een database toe te
+                passen om de applicatie te maken.
               </p>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark fw-bold text-center rounded">Used Skills</li>
-                <li class="list-group-item"><i class="bi bi-filetype-html"> </i>HTML</li>
-                <li class="list-group-item"><i class="bi bi-bootstrap-fill"> </i>Bootstrap 5</li>
-                <li class="list-group-item"><i class="bi bi-filetype-php"> </i>PHP</li>
-                <li class="list-group-item"><i class="bi bi-database-fill"> </i>Database</li>
+                <li
+                  class="list-group-item list-group-item-dark fw-bold text-center rounded"
+                >
+                  Used Skills
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-filetype-html"> </i>HTML
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-bootstrap-fill"> </i>Bootstrap 5
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-filetype-php"> </i>PHP
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-database-fill"> </i>Database
+                </li>
               </ul>
             </div>
           </div>
@@ -117,28 +196,73 @@
 
         <!--COLLECTABLEs CARD -->
         <div class="col-12 col-md-6 col-lg-3">
-          <div class="card shadow h-100" data-aos="fade-up" data-aos-duration="2250">
-            <img src="img/collectables.png" class="card-img-top h-25" alt="Collectables project" />
+          <div
+            class="card shadow h-100"
+            data-aos="fade-up"
+            data-aos-duration="2250"
+          >
+            <img
+              src="img/collectables.png"
+              class="card-img-top h-25"
+              alt="Collectables project"
+            />
             <div class="card-body">
-              <h5 class="card-header bg-secondary-subtle text-center">Collectables</h5>
+              <h5 class="card-header bg-secondary-subtle text-center">
+                Collectables
+              </h5>
               <p class="card-text text-center">
-                Collectables is het laatste project van mijn eerste leerjaar. 
-                Gebruikers kunnen hier verzamelingen maken met items daarin. 
-                Ook kun je als gebruiker andere collecties bekijken.
+                Collectables is het laatste project van mijn eerste leerjaar.
+                Gebruikers kunnen hier verzamelingen maken met items daarin. Ook
+                kun je als gebruiker andere collecties bekijken.
               </p>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark fw-bold text-center rounded">Used Skills</li>
-                <li class="list-group-item"><i class="bi bi-filetype-html"> </i>HTML</li>
-                <li class="list-group-item"><i class="bi bi-bootstrap-fill"> </i>Bootstrap 5</li>
-                <li class="list-group-item"><i class="bi bi-filetype-php"> </i>PHP</li>
-                <li class="list-group-item"><i class="bi bi-database-fill"> </i>Database</li>
+                <li
+                  class="list-group-item list-group-item-dark fw-bold text-center rounded"
+                >
+                  Used Skills
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-filetype-html"> </i>HTML
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-bootstrap-fill"> </i>Bootstrap 5
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-filetype-php"> </i>PHP
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-database-fill"> </i>Database
+                </li>
               </ul>
             </div>
           </div>
         </div>
-
       </div>
     </div>
+
+    <!--footer -->
+    <footer
+      class="bg-dark bg-gradient py-2 mt-3 text-center fixed-bottom text-white"
+    >
+      &copy; Copyright 2026 Dean Tenholter
+      <hr class="w-75 mx-auto" />
+      <div class="mt-2">
+        <a
+          href="https://github.com/DeanTenholter"
+          class="text-white mx-2 text-decoration-none"
+          target="_blank"
+        >
+          <i class="bi bi-github fs-5"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/dean-tenholter-1493b9410"
+          class="text-white mx-2 text-decoration-none"
+          target="_blank"
+        >
+          <i class="bi bi-linkedin fs-5"></i>
+        </a>
+      </div>
+    </footer>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

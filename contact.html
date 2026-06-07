@@ -20,43 +20,61 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>Dean T's Profile</title>
+    <title>Dean T - Projects</title>
   </head>
 
-  <body class="bg-secondary-subtle">
+  <body class="bg-secondary-subtle d-flex flex-column min-vh-100">
     <!--Navbar-->
-    <nav class="navbar bg-dark bg-gradient p-3 shadow">
+    <nav
+      class="navbar navbar-dark navbar-expand-lg bg-dark bg-gradient p-3 shadow"
+    >
       <div class="container-fluid">
         <!-- Home -->
         <a class="navbar-brand fw-bold text-white" href="index.html">
           <i class="bi bi-house"></i> Home
         </a>
 
-        <ul class="navbar-nav ms-auto d-flex flex-row">
-          <!--projects-->
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="projects.html">
-              <i class="bi bi-archive"></i> Projects
-            </a>
-          </li>
-          <!--info-->
-          <li class="nav-item me-3 mx-3">
-            <a class="nav-link fw-bold text-white" href="info.html">
-              <i class="bi bi-info-circle"></i> Info</a
-            >
-          </li>
-          <!--contact-->
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="contact.html">
-              <i class="bi bi-telephone-fill"></i> Contact</a
-            >
-          </li>
-        </ul>
+        <!-- Hamburger knop -->
+        <button
+          class="navbar-toggler border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <!-- Projects -->
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="projects.html">
+                <i class="bi bi-archive"></i> Projects
+              </a>
+            </li>
+            <!-- Info -->
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bold text-white" href="info.html">
+                <i class="bi bi-info-circle"></i> Info
+              </a>
+            </li>
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="contact.html">
+                <i class="bi bi-telephone-fill"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- Contact sectie -->
-    <div class="container my-5">
+    <div class="container mt-5 mb-5 pb-4 flex-grow-1">
       <div class="row g-4">
         <!-- Info -->
         <div class="col-12 col-md-3">
@@ -65,19 +83,34 @@
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <h5 class="fw-bold" data-aos="fade-right" data-aos-duration="1250"><i class="bi bi-person-circle"></i> Contact</h5>
-            <p class="text-muted" data-aos="fade-right" data-aos-duration="1250">
+            <h5 class="fw-bold" data-aos="fade-right" data-aos-duration="1000">
+              <i class="bi bi-person-circle"></i> Contact
+            </h5>
+            <p
+              class="text-muted"
+              data-aos="fade-right"
+              data-aos-duration="1300"
+            >
               Heeft u interesse gekregen in wat ik doe en wilt u contact
               opnemen? Stuur mij een bericht door het formulier in te vullen.
               Ook kunt u mij vinden op andere platforms via onderstaande links.
             </p>
             <hr />
-            <p data-aos="fade-up"
-                data-aos-duration="1250"
-            >
-            <i class="bi bi-geo-alt"></i> Zoetermeer, NL</p>
+            <p data-aos="fade-up" data-aos-duration="1250">
+              <a
+                class="text-decoration-none text-dark"
+                target="_blank"
+                href="https://www.google.com/maps/place/Zoetermeer/"
+              >
+                <i class="bi bi-geo-alt"></i> Zoetermeer, NL
+              </a>
+            </p>
 
-            <div class="d-flex  gap-3">
+            <div
+              class="d-flex gap-3"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+            >
               <a
                 href="https://github.com/DeanTenholter"
                 target="_blank"
@@ -105,7 +138,7 @@
           <div class="card p-4" data-aos="fade-left" data-aos-duration="1400">
             <form action="https://formspree.io/f/xjgdybzv" method="POST">
               <!-- Email -->
-              <div class="mb-3">
+              <div class="mb-3" data-aos="fade-left" data-aos-duration="1500">
                 <label for="exampleInputEmail1" class="form-label"
                   >Uw E-mail</label
                 >
@@ -116,13 +149,10 @@
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
-                <div id="emailHelp" class="form-text">
-                  Ingevoerde gegevens worden niet gedeeld met externe partijen.
-                </div>
               </div>
 
               <!-- Bericht -->
-              <div class="mb-3">
+              <div data-aos="fade-left" data-aos-duration="1750">
                 <label for="bericht" class="form-label">Uw bericht</label>
                 <textarea
                   name="message"
@@ -131,9 +161,22 @@
                   rows="5"
                 ></textarea>
               </div>
+              <div
+                id="info"
+                class="form-text mb-3"
+                data-aos="fade-left"
+                data-aos-duration="1900"
+              >
+                Ingevoerde gegevens worden niet gedeeld met externe partijen.
+              </div>
 
               <!-- Verzenden -->
-              <button type="submit" class="btn btn-primary">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
                 <i class="bi bi-send"></i> Verzenden
               </button>
             </form>
@@ -141,6 +184,28 @@
         </div>
       </div>
     </div>
+
+    <!--footer -->
+    <footer class="bg-dark bg-gradient py-2 mt-3 text-center text-white">
+      &copy; Copyright 2026 Dean Tenholter
+      <hr class="w-75 mx-auto" />
+      <div class="mt-2">
+        <a
+          href="https://github.com/DeanTenholter"
+          class="text-white mx-2 text-decoration-none"
+          target="_blank"
+        >
+          <i class="bi bi-github fs-5"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/dean-tenholter-1493b9410"
+          class="text-white mx-2 text-decoration-none"
+          target="_blank"
+        >
+          <i class="bi bi-linkedin fs-5"></i>
+        </a>
+      </div>
+    </footer>
 
     <!-- --Scripts-- -->
 
