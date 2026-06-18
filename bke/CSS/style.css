@@ -1,0 +1,197 @@
+/*css reset + gemeenschappelijke eigenschappen*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*kleuren in variabelen*/
+:root{
+    --primary-color: #6399CD;
+    --secondary-color: #3F76B8;
+    --reset-btn-background-color: #e80505e1;
+}
+
+/*header + elementen*/
+header{ 
+    background-color: var(--primary-color);
+    border-bottom: 2px solid black; 
+    padding: 10px;
+}
+
+.title{
+    display: flex;
+    justify-self: center;
+    background-color: var(--secondary-color);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+/*home knop*/
+.home-btn{
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.home-btn:hover{
+    background: #0d66d4;
+    transition: 1s;
+}
+
+#winner-text{
+    display: flex;
+    /*background-color: var(--secondary-color);*/
+    width: fit-content;
+    padding: 5px;
+    justify-self: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    /*border: 2px solid black;*/
+    font-weight: bolder;
+}
+
+/* middelste vak waarin de game plaatsvind*/
+.game-container{
+    justify-self: center;
+    background-color: var(--primary-color);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 25px;
+    width: 500px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.500);
+}
+
+#playerTurn{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*grid voor het spel*/
+#boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    padding: 10px;
+    justify-content: center;
+}
+
+
+/*styling voor hokjes van bke*/
+#boxes div {
+    background-color: rgb(241, 240, 240);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+#boxes div:hover {
+    background-color: #dbe9f7;
+    transition: 0.2s;
+}
+
+#boxes div:active {
+    transform: scale(0.97);
+}
+
+/*scorebord*/
+.score-board{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 250px;
+    background-color: var(--primary-color);
+    width: 100px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*reset knop + extras*/
+#reset-btn{
+    display: flex;
+    margin: 8px;
+    padding: 5px;
+    background-color: var(--reset-btn-background-color);
+    border: 3px solid black;
+    border-radius: 7px;
+    justify-self: center;
+    font-size: larger;
+    color: rgb(241, 232, 232);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    text-decoration: none;
+}
+
+.reset-link{
+    text-decoration: none;
+    color: black;
+}
+
+#reset-btn:hover {
+    background-color: #ff3b3b;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#reset-btn:active {
+    transform: scale(0.97);
+}
+
+/*footer + elementen*/
+footer{
+    background-color: var(--primary-color);
+    border-top: 2px solid black;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-content: center;
+}
+
+.footer-text{
+    display: flex;
+    justify-self: center;
+    background-color: var(--secondary-color);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 7px;
+    width: auto;
+}
+
+
+/*----------Login Scherm-----------*/
+
+
+.login-form{
+    background-color: var(--secondary-color);
+    margin: 50px;
+    padding: 75px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.login-footer{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primary-color);
+    border-top: 2px solid black;
+    padding: 8px;
+    align-content: center;
+    width: 100%;
+}

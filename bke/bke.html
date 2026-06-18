@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Boter, Kaas en Eieren</title>
+  </head>
+  
+  <body>
+      
+    <header>
+      <!--home button moet teruggaan naar pagina met alle games-->
+      <button class="home-btn" > <a href="../projects.html"><strong>Terug</strong></a></button>
+      <h2 class="title">Boter, Kaas en Eieren</h2>
+    </header>
+
+    <div id="winner-text"><h3></h3></div>
+
+    <div class="game-container">
+      <!--Spelerbeurt wordt veranderd per beurt-->
+      <p id="playerTurn">Speler X is aan de beurt</p>
+
+      <!--div voor alle vakjes in speelveld-->
+      <div id="boxes">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <div id="box6"></div>
+        <div id="box7"></div>
+        <div id="box8"></div>
+        <div id="box9"></div>
+      </div>
+    </div>
+
+    <!--Scorebord rechts van de gamecontainer-->
+    <div class="score-board">
+      <strong>
+        <p>SCORE</p>
+        <br>
+
+        <!--Speler X elementen-->
+        <p id="playerX">Speler X</p>
+        <p id="playerXScore">0</p>
+
+        <br>
+
+        <!-- speler O elementen-->
+        <p id="playerO">Speler O</p>
+        <p id="playerOScore">0</p>
+      </strong>
+    </div>
+
+    <!--Resetknop voor compleet opnieuw beginnen-->
+    <button id="reset-btn"><a class="reset-link"><strong>Reset</strong></a></button>
+
+    <footer>
+      <p class="footer-text"><strong>Dean Tenholter - ROC Mondriaan&copy;</strong></p>
+    </footer>
+    
+    <!--js bestanden koppelen-->
+    <script src="js/start.js" defer></script>
+    <script src="js/model/bke.js" defer></script>
+    <script src="js/view/view.js" defer></script>
+    <script src="js/controller/controller.js" defer></script>
+    
+  </body>
+</html>

@@ -1,0 +1,148 @@
+/*CSs reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*body / grid */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #f5f5f5;
+}
+
+/* header */
+header {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  align-items: center;
+  background-color: rgb(109, 173, 162);
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+}
+
+/*home knop */
+.home-btn {
+  grid-column: 1;
+  justify-self: start;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.home-btn:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+}
+
+.quiz-titel {
+  grid-column: 2;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Quiz box / main*/
+main {
+  display: grid;
+  place-items: center; 
+  padding: 20px;
+}
+
+.quiz-box {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  align-items: start;
+  width: 800px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: rgb(109, 173, 162);
+  text-align: center;
+}
+
+.quiz-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* knoppen antwoorden*/
+.antwoorden button,
+#fiftyFifty {
+  background-color: azure;
+  margin: 10px;
+  padding: 15px 40px;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.antwoorden button:hover,
+#fiftyFifty:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+}
+
+/*footer */
+footer {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  align-items: center;
+  background-color: rgb(109, 173, 162);
+  border-top: 2px solid black;
+  padding: 10px 20px;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-tekst {
+  grid-column: 2;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*vorige vraag knop*/
+.vorige-btn {
+  grid-column: 1;
+  justify-self: start;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.vorige-btn:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+}
+
+
+/*volgende vraag knop*/
+.volgende-btn {
+  grid-column: 3;
+  justify-self: end;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.volgende-btn:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+}
+
+/*Staat in combi met JS, zorgt ervoor dat antwoorden verdwijnen bij klikken 50-50 knop*/
+.verberg {
+  display: none;
+}

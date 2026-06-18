@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <!-- ---Library links--- -->
+    <!-- Library links -->
 
     <!-- Bootstrap 5.3 -->
     <link
@@ -71,10 +71,173 @@
       </div>
     </nav>
 
+    <div class="container mt-5 mb-5 pb-4 flex-grow-1">
+      <div class="row g-4">
+        <!-- Kleine card -->
+        <div class="col-12 col-md-3">
+          <div
+            class="card h-100 p-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h4 class="fw-bold text-center">Sitemap</h4>
+
+            <hr />
+            <img src="img/sitemap.png" class="card-img" alt="sitemap" />
+          </div>
+        </div>
+
+        <!-- grote card-->
+        <div class="col-12 col-md-9">
+          <div class="card p-4" data-aos="fade-left" data-aos-duration="1400">
+            <!--Intro stukje -->
+            <h4 class="fw-bold mb-3 d-flex justify-content-center">
+              Over mijn portfolio
+            </h4>
+            <p>
+              Op deze info pagina vind je wat informatie over hoe ik mijn
+              portfolio heb gemaakt. Dingen zoals inspiratie en de technieken
+              die ik gebruikt heb zul je hier vinden.
+            </p>
+
+            <hr class="my-4" />
+
+            <h5 class="fw-bold d-flex justify-content-center">Bootstrap 5.3</h5>
+            <p>
+              Mijn portfolio is voornamelijk opgebouwd met Bootstrap 5.3.
+              Persoonlijk vind ik dit erg fijn om te gebruiken, want dit ziet er
+              professioneel uit en is snel en eenvoudig te gebruiken. Bootstrap
+              is makkelijk om te gebruiken voor dingen zoals responsive design
+              en grid. Daarnaast gebruik ik Bootstrap Icons voor de icoontjes en
+              AOS (Animate On Scroll) voor subtiele animaties wanneer je scrolt.
+              Ik ben erg fan van Bootstrap Icons, ik vind dat dit erg bijdraagt
+              aan de details van mijn website. Ook AOS vind ik erg fijn, dit
+              zorgt ervoor dat mijn website minder statisch is.
+            </p>
+
+            <hr class="my-4" />
+
+            <!-- inspiratie-->
+            <h5 class="fw-bold d-flex justify-content-center">Inspiratie</h5>
+            <p>
+              Voor de uitstraling van de site heb ik mij vooral laten inspireren
+              door portfoliowebsites die
+              <a href="https://sbechoe.github.io/bootstrap/" target="_blank"
+                >hier</a
+              >
+              te vinden zijn. Dit is de profielwebsite van mijn docent, die een
+              aantal portfolio websites van haar studenten heeft staan. Hier
+              werd ik vooral geïnspireerd door
+              <a href="https://marnixverstappen.github.io/" target="_blank"
+                >deze website</a
+              >. Ik vind het kleurgebruik en de design van sommige elementen erg
+              mooi, en heb deze goed kunnen gebruiken als inspiratie voor mijn
+              eigen portfolio. Hieronder zie je een aantal afbeelding van
+              websites die ik als inspiratie heb gebruikt voor mijn portfolio.
+            </p>
+
+            <!-- image carousel-->
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide h-25"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="img/inspo1.png"
+                    class="d-block w-100 card-img"
+                    alt="inspiratie"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="img/inspo2.png"
+                    class="d-block w-100 card-img"
+                    alt="inspiratie"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/inspo3.png"
+                    class="d-block w-100 card-img"
+                    alt="inspiratie"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!--kleurenschema-->
+            <hr class="my-4" />
+
+            <h5 class="fw-bold d-flex justify-content-center">Kleurenschema</h5>
+            <p>
+              Ik heb voor mijn kleurenschema vooral donkere kleuren gebruikt.
+              Ook heb ik gebruik gemaakt van Bootstrap gradients om de pagina
+              wat netter te maken en wat minder eentonig. Dit is bijvoorbeeld
+              terug te zien in mijn navigatiebalk.
+            </p>
+            <div class="d-flex flex-wrap gap-4">
+              <div class="text-center">
+                <div
+                  class="bg-dark rounded mb-2 mx-auto"
+                  style="width: 56px; height: 56px"
+                ></div>
+                <small class="d-block fw-bold">Donker</small>
+              </div>
+              <div class="text-center">
+                <div
+                  class="bg-secondary-subtle border rounded mb-2 mx-auto"
+                  style="width: 56px; height: 56px"
+                ></div>
+                <small class="d-block fw-bold">Lichtgrijs</small>
+              </div>
+              <div class="text-center">
+                <div
+                  class="bg-white border rounded mb-2 mx-auto"
+                  style="width: 56px; height: 56px"
+                ></div>
+                <small class="d-block fw-bold">Wit</small>
+              </div>
+              <div class="text-center">
+                <div
+                  class="bg-primary rounded mb-2 mx-auto"
+                  style="width: 56px; height: 56px"
+                ></div>
+                <p class="d-block">Blauw</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--footer -->
-    <footer
-      class="mt-3 bg-dark bg-gradient py-2 text-center fixed-bottom text-white"
-    >
+    <footer class="mt-3 bg-dark bg-gradient py-2 text-center text-white">
       &copy; Copyright 2026 Dean Tenholter
       <hr class="w-75 mx-auto" />
       <div class="mt-2">
@@ -95,7 +258,7 @@
       </div>
     </footer>
 
-    <!-- --Scripts-- -->
+    <!-- Scripts -->
 
     <!--AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
